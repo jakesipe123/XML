@@ -1,18 +1,18 @@
 <?php
 	
 	$object = new DOMDocument();
-	$object->load("https://rssxaaa.herokuapp.com/");
+	$object->load("https://exerxml.herokuapp.com/");
 	
 	
 	$content = $object->getElementsByTagName("item");
 	
 	foreach($content as $data){
 			$name = $data->getElementsByTagName("name")->item(0)->nodeValue;
-			$address = $data->getElementsByTagName("address")->item(0)->nodeValue;
-			$contact = $data->getElementsByTagName("contact")->item(0)->nodeValue;
-			$status = $data->getElementsByTagName("status")->item(0)->nodeValue;
+			$age = $data->getElementsByTagName("age")->item(0)->nodeValue;
+			$gender = $data->getElementsByTagName("gender")->item(0)->nodeValue;
+			
 	
-		echo "$name - $address - $contact - $status <br>";
+		echo "$name - $age - $gender <br>";
 	}
 
 	
