@@ -13,7 +13,7 @@
 				echo "<item>
 					<name>$row->Name</name>
 					<age>$row->Age</age>
-					<gender>$row->CNumber</gender>
+					<gender>$row->Gender</gender>
 					
 				</item>";
 				}
